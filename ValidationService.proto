@@ -14,6 +14,3 @@ service ValidationService {
   // Used only to validate one user
   rpc ValidationSingle(ValidationModels.ValidationRequest) returns (ValidationModels.ValidationReply) {}
 }
-
-
-message{}
