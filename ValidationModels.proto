@@ -5,19 +5,21 @@ package ValidationModels;
 message ValidationRequest {
 	 string CodeCSMP = 1;
 	 string UserFiscalNumber = 2;
-	 int64  DateTime = 3;
-	 string PositionGPS = 4;
-	 string CodeCMIO = 5;
-	 string ValidatorID = 6;
-	 string Price = 7;
+	 string UserIBAN =3;
+	 int64  DateTime = 4;
+	 string PositionGPS = 5;
+	 string CodeCMOI = 6;
+	 string CMOINIB = 7;
+	 string CMOINIF = 8;
+	 string ValidatorID = 9;
+	 float Price = 10;
 }
 
 
 message ValidationReply{
 	 string CodeCSMP = 1;
 	 string UserFiscalNumber = 2;
-	 int64  DateTime = 3;
-	 string PositionGPS = 4;
-	 string CMIONIF = 5;		
+	 int64  DateTime = 3;	 
 	 string TransferredValue = 6;
+	 bool Authorised = 7;
 }
